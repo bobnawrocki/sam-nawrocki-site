@@ -277,14 +277,26 @@ figcaption {
 }
 
 .hero-image {
+  position: relative;
+  overflow: hidden;
+  height: min(68vh, 760px);
   min-height: min(68vh, 760px);
+  border: 1px solid var(--dark-line);
   border-color: var(--dark-line);
+  box-shadow: var(--shadow);
   color: var(--cream);
   background:
     linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.46) 100%),
     linear-gradient(135deg, rgba(215, 197, 173, 0.22), rgba(73, 88, 68, 0.22)),
     repeating-linear-gradient(45deg, rgba(244, 236, 223, 0.12), rgba(244, 236, 223, 0.12) 1px, transparent 1px, transparent 22px),
     #484135;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-image::after {
@@ -605,6 +617,7 @@ textarea:focus {
   }
 
   .hero-image {
+    height: 420px;
     min-height: 420px;
   }
 
