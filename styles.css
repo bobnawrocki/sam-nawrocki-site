@@ -151,6 +151,7 @@ blockquote {
 h1 {
   max-width: 920px;
   font-size: clamp(48px, 5.6vw, 82px);
+  line-height: 0.92;
 }
 
 h2 {
@@ -281,6 +282,7 @@ figcaption {
   overflow: hidden;
   height: min(58vh, 620px);
   min-height: min(58vh, 620px);
+  margin-right: clamp(20px, 2vw, 32px);
   border: 1px solid var(--dark-line);
   border-color: var(--dark-line);
   box-shadow: var(--shadow);
@@ -290,6 +292,19 @@ figcaption {
     linear-gradient(135deg, rgba(215, 197, 173, 0.22), rgba(73, 88, 68, 0.22)),
     repeating-linear-gradient(45deg, rgba(244, 236, 223, 0.12), rgba(244, 236, 223, 0.12) 1px, transparent 1px, transparent 22px),
     #484135;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 34, 29, 0.1),
+    rgba(36, 34, 29, 0.35)
+  );
+  pointer-events: none;
 }
 
 .hero-image img {
@@ -619,6 +634,7 @@ textarea:focus {
   .hero-image {
     height: 420px;
     min-height: 420px;
+    margin-right: 0;
   }
 
   .section-heading {
