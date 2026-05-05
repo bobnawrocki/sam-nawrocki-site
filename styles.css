@@ -542,14 +542,15 @@ blockquote {
 }
 
 .partner {
-  grid-template-columns: minmax(0, 0.78fr) minmax(280px, 0.62fr);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
   align-items: center;
 }
 
 .partner-image {
   overflow: hidden;
+  width: 100%;
   margin: 0;
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 4 / 5;
   min-height: auto;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
