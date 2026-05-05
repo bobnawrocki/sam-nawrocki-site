@@ -786,7 +786,6 @@ textarea:focus {
 
   .credentials div + div {
     border-left: 1px solid var(--line);
-    padding-left: 0;
   }
 
   .credentials div {
